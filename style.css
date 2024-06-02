@@ -1,0 +1,110 @@
+body {
+    font-size: var(--font-5);
+    background-color: #10192a;
+  }
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  header {
+    background-color: #10192a;
+    color: #4ccc76;
+    padding: var(--spacing-6) var(--spacing-0) var(--spacing-6);
+    font-family: "Share Tech Mono", monospace;
+    text-align: center;
+  }
+
+  .ultratitle {
+    font-size: var(--font-8);
+  }
+
+  .headline {
+    font-size: var(--font-6);
+  }
+
+  .banner {
+    position: absolute;
+    top: -10px;
+    left: var(--spacing-4);
+  }
+
+  .banner img {
+    height: 100px; /* Increase the height of the logo image */
+  }
+
+  /* Adjust the banner image background */
+  .banner {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner:hover img {
+    animation: wave-flag 0.5s linear infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .banner:hover img {
+      transition: 0.1875s cubic-bezier(0.375, 0, 0.675, 1) transform;
+      transform-origin: top left;
+    }
+  }
+
+  @keyframes wave-flag {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+
+  header > p,
+  header > p > a {
+    color: #3b995b !important;
+  }
+
+  .container {
+    margin: var(--spacing-4) auto;
+  }
+
+  .blurb {
+    border: 2px dashed var(--border);
+    border-radius: var(--radii-default);
+    font-size: var(--font-4);
+    padding: var(--spacing-4);
+  }
+
+  .title {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .join-btn {
+    background-color: #4ccc76;
+    color: #10192a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: var(--font-5);
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .join-btn:hover {
+    background-color: #3b995b;
+  }
+
+  h2 {
+    color: #3b995b;
+    font-size: var(--font-7);
+    font-family: "Share Tech", sans-serif;
+  }
+  p{
+    color:#4ccc76;
+    font-family: "Share Tech", sans-serif;
+  }
